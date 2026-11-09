@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxfile host="app.diagrams.net" modified="2026-11-09T20:00:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="library-er-model" name="Концептуальна ER-модель">
+    <mxGraphModel dx="1440" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="&lt;div style='font-size:16px;font-weight:bold;text-align:center;padding:8px;background:#e8eef7;border-bottom:1px solid #314765'&gt;ЧИТАЧ&lt;/div&gt;&lt;div style='padding:8px;font-size:13px'&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;🔑 PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;ID_читача&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;String&lt;/b&gt;&amp;nbsp;&amp;nbsp;ПІБ&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;String&lt;/b&gt;&amp;nbsp;&amp;nbsp;телефон&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;String&lt;/b&gt;&amp;nbsp;&amp;nbsp;email&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;Date&lt;/b&gt;&amp;nbsp;&amp;nbsp;дата_реєстрації&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#314765;strokeWidth=2;align=left;verticalAlign=top;spacing=0;fontColor=#26354d;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="400" width="330" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="&lt;div style='font-size:16px;font-weight:bold;text-align:center;padding:8px;background:#e8eef7;border-bottom:1px solid #314765'&gt;КНИГА&lt;/div&gt;&lt;div style='padding:8px;font-size:13px'&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;🔑 PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;ID_книги&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;String&lt;/b&gt;&amp;nbsp;&amp;nbsp;назва&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;String&lt;/b&gt;&amp;nbsp;&amp;nbsp;ISBN&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;Integer&lt;/b&gt;&amp;nbsp;&amp;nbsp;рік_видання&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;FK&lt;/b&gt;&amp;nbsp;&amp;nbsp;ID_видавництва&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#314765;strokeWidth=2;align=left;verticalAlign=top;spacing=0;fontColor=#26354d;" vertex="1" parent="1">
+          <mxGeometry x="520" y="90" width="330" height="205" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="&lt;div style='font-size:16px;font-weight:bold;text-align:center;padding:8px;background:#e8eef7;border-bottom:1px solid #314765'&gt;ПРИМІРНИК&lt;/div&gt;&lt;div style='padding:8px;font-size:13px'&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;🔑 PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;ID_примірника&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;String&lt;/b&gt;&amp;nbsp;&amp;nbsp;інвентарний_номер&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;String&lt;/b&gt;&amp;nbsp;&amp;nbsp;стан&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;String&lt;/b&gt;&amp;nbsp;&amp;nbsp;статус&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;FK&lt;/b&gt;&amp;nbsp;&amp;nbsp;ID_книги&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#314765;strokeWidth=2;align=left;verticalAlign=top;spacing=0;fontColor=#26354d;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="90" width="330" height="205" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="&lt;div style='font-size:16px;font-weight:bold;text-align:center;padding:8px;background:#e8eef7;border-bottom:1px solid #314765'&gt;АВТОР&lt;/div&gt;&lt;div style='padding:8px;font-size:13px'&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;🔑 PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;ID_автора&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;String&lt;/b&gt;&amp;nbsp;&amp;nbsp;ПІБ&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;Date&lt;/b&gt;&amp;nbsp;&amp;nbsp;дата_народження&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#314765;strokeWidth=2;align=left;verticalAlign=top;spacing=0;fontColor=#26354d;" vertex="1" parent="1">
+          <mxGeometry x="70" y="570" width="300" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="&lt;div style='font-size:16px;font-weight:bold;text-align:center;padding:8px;background:#e8eef7;border-bottom:1px solid #314765'&gt;ВИДАВНИЦТВО&lt;/div&gt;&lt;div style='padding:8px;font-size:13px'&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;🔑 PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;ID_видавництва&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;String&lt;/b&gt;&amp;nbsp;&amp;nbsp;назва&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;String&lt;/b&gt;&amp;nbsp;&amp;nbsp;місто&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#314765;strokeWidth=2;align=left;verticalAlign=top;spacing=0;fontColor=#26354d;" vertex="1" parent="1">
+          <mxGeometry x="70" y="90" width="300" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="&lt;div style='font-size:16px;font-weight:bold;text-align:center;padding:8px;background:#e8eef7;border-bottom:1px solid #314765'&gt;ВИДАЧА&lt;/div&gt;&lt;div style='padding:8px;font-size:13px'&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;🔑 PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;ID_видачі&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;Date&lt;/b&gt;&amp;nbsp;&amp;nbsp;дата_видачі&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;Date&lt;/b&gt;&amp;nbsp;&amp;nbsp;дата_повернення&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;Date&lt;/b&gt;&amp;nbsp;&amp;nbsp;фактична_дата_повернення&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;String&lt;/b&gt;&amp;nbsp;&amp;nbsp;статус&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;FK&lt;/b&gt;&amp;nbsp;&amp;nbsp;ID_читача&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;FK&lt;/b&gt;&amp;nbsp;&amp;nbsp;ID_примірника&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#314765;strokeWidth=2;align=left;verticalAlign=top;spacing=0;fontColor=#26354d;" vertex="1" parent="1">
+          <mxGeometry x="520" y="350" width="330" height="220" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="&lt;div style='font-size:16px;font-weight:bold;text-align:center;padding:8px;background:#e8eef7;border-bottom:1px solid #314765'&gt;АВТОРСТВО&lt;/div&gt;&lt;div style='padding:8px;font-size:13px'&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;🔑 PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;ID_авторства&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;FK&lt;/b&gt;&amp;nbsp;&amp;nbsp;ID_книги&lt;/div&gt;&lt;div style='padding:2px 0;border-bottom:1px solid #e5e7eb'&gt;&lt;b&gt;FK&lt;/b&gt;&amp;nbsp;&amp;nbsp;ID_автора&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#314765;strokeWidth=2;align=left;verticalAlign=top;spacing=0;fontColor=#26354d;" vertex="1" parent="1">
+          <mxGeometry x="520" y="570" width="330" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERzeroToMany;endFill=0;startFill=0;strokeColor=#526078;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="6" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="21" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERzeroToMany;endFill=0;startFill=0;strokeColor=#526078;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="22" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERzeroToMany;endFill=0;startFill=0;strokeColor=#526078;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="3" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="23" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERzeroToMany;endFill=0;startFill=0;strokeColor=#526078;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="5" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="24" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERzeroToMany;endFill=0;startFill=0;strokeColor=#526078;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="2" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="25" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERzeroToMany;endFill=0;startFill=0;strokeColor=#526078;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="4" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="40" value="ІНФОРМАЦІЙНА СИСТЕМА БІБЛІОТЕКИ — КОНЦЕПТУАЛЬНА ER-МОДЕЛЬ" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#172033;" vertex="1" parent="1">
+          <mxGeometry x="120" y="20" width="1200" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="41" value="PK — первинний ключ; FK — зовнішній ключ. Зв’язок M:N між «Книга» та «Автор» реалізовано через проміжну сутність «Авторство»." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#526078;" vertex="1" parent="1">
+          <mxGeometry x="70" y="780" width="1300" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
